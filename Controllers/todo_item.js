@@ -5,4 +5,9 @@ const getAllToDoItems=(req,res)=>{
     res.send('List of all items')
 }
 
-module.exports={getAllToDoItems};
+const createNewToDoItems=(req,res)=>{
+    // res.send('Creating new ToDo items')
+    res.send(req.body)
+}
+
+module.exports={getAllToDoItems,createNewToDoItems};
